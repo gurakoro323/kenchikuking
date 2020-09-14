@@ -593,6 +593,7 @@ header {
 
 .schedule-area:before {
   content: url(sozai/icon_seminar_area.png);
+  padding: 0px 1px;
 }
 
 .schedule-cost {
@@ -988,6 +989,10 @@ footer {
   margin-bottom: 200px;
 }
 
+.schedule-top {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .header-links {
     display: none;
@@ -1284,5 +1289,106 @@ footer {
 
   .footer-document {
     width: 70vw;
+  }
+
+  .survey {
+    width: auto;
+  }
+
+  .warning {
+    width: auto;
+  }
+
+  .survey {
+    width: auto;
+  }
+
+  .recommend {
+    width: auto;
+  }
+
+  .seminar-content {
+    width: auto;
+  }
+
+  .membership-main {
+    width: auto;
+  }
+
+  .privacy {
+    width: auto;
+  }
+
+  .copyright {
+    width: auto;
+  }
+
+  .firstview p {
+    width: auto;
+  }
+
+  .breadcrumb {
+    width: auto;
+  }
+
+  .interview-button {
+    width: auto;
+  }
+
+  .offices {
+    width: auto;
+  }
+
+  .document-left {
+    width: auto;
+  }
+  .schedule {
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .schedule-left {
+    width: 50%;
+  }
+  .schedule-image {
+    width: 50%;
+  }
+
+  .schedule-image img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .schedule-req {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .schedule-subtitle br {
+    display: none;
+  }
+
+  .schedule-top {
+    margin-bottom: 20px;
+  }
+
+  .schedule-subtitle h4 {
+    margin-bottom: 10px;
+  }
+
+  .schedule-subtitle p {
+    margin-bottom: 20px;
+  }
+
+  .schedule-left > div {
+    align-items: center;
+  }
+
+  .schedule-left > div p {
+    margin-left: 5px;
   }
 }
