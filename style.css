@@ -1,0 +1,1288 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset CSS */
+
+/* PC769~1440px SP375~768px */
+body {
+  background-color: white;
+}
+/* next conan's hint 6/23 : flexbox */
+
+header {
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-all {
+  font-family: "M PLUS Rounded 1c";
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 170px;
+  margin-top: 10px;
+}
+
+.header-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 70px;
+}
+
+.header-links p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header-links li {
+  margin: 0 0 0 20px;
+}
+
+.header-links h1 {
+  font-size: 20px;
+}
+
+.header-links h2 {
+  color: green;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.contact {
+  color: white;
+  background-color: rgb(248, 182, 44);
+  border-radius: 30px;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.document {
+  color: white;
+  background-color: rgb(33, 164, 87);
+  border-radius: 30px;
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.breadcrumb {
+  display: flex;
+  width: 1000px;
+  margin: 90px auto 10px auto;
+  font-size: 12px;
+}
+
+.breadcrumb li:after {
+  content: "＞";
+}
+
+.breadcrumb li:last-child:after {
+  display: none;
+}
+
+.firstview {
+  background-image: url(sozai/haikei1.png);
+  background-size: cover;
+  height: 180px;
+}
+
+.firstview-inner {
+  position: relative;
+  width: 80vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.firstview h1 {
+  font-family: "M PLUS Rounded 1c";
+  color: white;
+  font-size: 40px;
+  padding: 20px 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.firstview p {
+  font-family: "M PLUS Rounded 1c";
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.occhan {
+  position: absolute;
+  width: 140px;
+  right: 0;
+  bottom: 0;
+}
+
+.seminar-link {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.seminar-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 70px;
+  color: white;
+  background-color: rgb(113, 186, 42);
+  border-radius: 20px;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 30px 0 0 0;
+  font-family: "Noto Sans JP";
+}
+
+.seminar-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 70px;
+  color: white;
+  background-color: rgb(4, 164, 88);
+  border-radius: 20px;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 25px;
+  margin: 30px 0 0 100px;
+  font-family: "Noto Sans JP";
+}
+
+.seminar-about:after,
+.seminar-date:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: solid transparent 15px;
+  border-right: solid transparent 7.5px;
+  border-bottom: solid transparent 7.5px;
+  border-left: solid transparent 7.5px;
+  box-sizing: border-box;
+  border-top-color: white;
+  margin: 15px 0 0 0;
+}
+
+.content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(113, 186, 42);
+  font-size: 46px;
+  margin: 100px 0 0 0;
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+}
+
+.content-title:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 30px;
+  border-color: rgb(113, 186, 42) transparent transparent transparent;
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+}
+
+.seminar-content {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  margin: 20px auto 0 auto;
+}
+
+.content-why,
+.content-logic,
+.content-how {
+  width: 30%;
+}
+
+.semi-title {
+  text-align: center;
+  font-size: 26px;
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.content-text {
+  padding-top: 20px;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recommend {
+  display: flex;
+  width: 1000px;
+  height: 350px;
+  margin: 50px auto;
+  background-color: rgb(229, 242, 216);
+  align-items: center;
+}
+
+.recommend-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.recommend-left img {
+  width: 200px;
+}
+
+.recommend-left p {
+  color: rgb(33, 164, 87);
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+}
+
+.recommend-right {
+  margin-left: 10px;
+  height: 250px;
+}
+
+.recommend-right ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommend-right li {
+  display: flex;
+  align-items: center;
+}
+
+.recommend-right p {
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.impression {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.impression h2 {
+  font-size: 40px;
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+}
+
+.survey {
+  font-size: 30px;
+  width: 1000px;
+  color: rgb(33, 164, 87);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom: solid 10px rgb(33, 164, 87);
+  padding-bottom: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: 900;
+}
+
+.voice-all {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.voice {
+  display: flex;
+}
+
+.voice-left img {
+  width: 120px;
+  height: auto;
+}
+
+.voice-right p {
+  font-size: 26px;
+  font-family: "Noto Sans JP";
+  font-weight: 700;
+}
+
+.arrow-box {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: white;
+  font-size: 16px;
+  background: rgb(33, 164, 87);
+  border-radius: 15px;
+}
+
+.arrow-box:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid rgb(33, 164, 87);
+}
+
+.arrow-box p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.schedule-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.schedule-title h3 {
+  font-size: 40px;
+  font-family: "M PLUS Rounded 1c";
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.schedule-title p {
+  font-family: "Yu Gothic";
+  font-size: 17px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.schedule-title img {
+  width: 35px;
+  height: auto;
+  padding-top: 30px;
+}
+
+.warning {
+  color: red;
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main {
+  background-color: rgb(228, 248, 197);
+}
+
+.schedule {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.schedule-date li {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 30px;
+}
+
+.schedule-date1 {
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.schedule-date2 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.schedule-time {
+  display: flex;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.schedule-time:before {
+  content: url(sozai/icon_seminar_time.png);
+}
+
+.schedule-time2 {
+  padding-left: 20px;
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.schedule-area {
+  display: flex;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.schedule-area:before {
+  content: url(sozai/icon_seminar_area.png);
+}
+
+.schedule-cost {
+  display: flex;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.schedule-cost:before {
+  content: url(sozai/icon_seminar_cost.png);
+}
+
+.schedule-subtitle h4 {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.schedule-subtitle p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.schedule-image img {
+  width: 300px;
+  padding: 15px 30px;
+}
+
+.schedule-req {
+  color: white;
+  background-color: rgb(33, 164, 87);
+  border-radius: 30px;
+  padding: 8px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.schedule-req:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 8.6px;
+  border-color: transparent transparent transparent white;
+  display: inline-block;
+}
+
+.membership {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.membership-right {
+  float: right;
+}
+
+.membership-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.membership-title h3 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.membership-main p {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.membership-main {
+  width: 1000px;
+}
+
+.interview {
+  color: white;
+  background-color: rgb(33, 164, 87);
+  border-radius: 30px;
+  padding: 10px 100px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.interview-button {
+  margin-top: 60px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  width: 450px;
+  margin-bottom: 100px;
+}
+
+.interview:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 14px;
+  border-color: transparent transparent transparent white;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: 18px;
+}
+
+.document-main {
+  display: flex;
+  justify-content: center;
+}
+
+.document-left {
+  width: 500px;
+  margin: 60px 30px 60px 0;
+}
+
+.document-title {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.document-title-main p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 15px 15px;
+}
+
+.document-title-main h3 {
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0 0 15px 15px;
+}
+
+.document-body p {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(244, 244, 244);
+}
+
+.footer-logo {
+  width: 250px;
+  margin-top: 30px;
+  animation: rotation 1s ease 0s 1 alternate none running;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+
+  20% {
+    transform: scale(1.1, 1.1) rotate(5deg);
+  }
+
+  40% {
+    transform: scale(1.1, 1.1) rotate(-5deg);
+  }
+
+  50% {
+    transform: scale(1.1, 1.1) rotate(5deg);
+  }
+
+  60% {
+    transform: scale(1.1, 1.1) rotate(-5deg);
+  }
+
+  80% {
+    transform: scale(1.1, 1.1) rotate(5deg);
+  }
+
+  100% {
+    transform: scale(1.1, 1.1) rotate(-5deg);
+  }
+}
+
+.footer-left-second {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.corp {
+  display: flex;
+  align-items: center;
+}
+
+.corp-name {
+  font-size: 24px;
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+.facebook {
+}
+
+.social-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+.social-button-fb {
+  background: #3b5998;
+}
+
+.employ {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.employ p {
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+}
+
+.employ p:before {
+  content: "＼";
+}
+
+.employ p:after {
+  content: "／";
+}
+
+.employ-button {
+  margin-top: 20px;
+}
+
+.employ-btn {
+  color: white;
+  background-color: rgb(113, 186, 42);
+  padding: 10px 60px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.employ-btn:hover {
+  color: yellowgreen;
+  background-color: white;
+  border: solid 2px rgb(113, 186, 42);
+}
+
+.offices {
+  display: flex;
+  width: 500px;
+}
+
+.office {
+  width: 30%;
+}
+
+.office h5 {
+  color: rgb(113, 186, 42);
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.office p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.privacy {
+  display: flex;
+  font-size: 14px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.privacy a {
+  transition: 0.5s;
+  color: #333333;
+}
+
+.privacy a:hover {
+  color: #71ba2a;
+}
+
+.privacy li:after {
+  content: "| ";
+}
+
+.privacy li:last-child:after {
+  display: none;
+}
+
+.footer-right {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-right ul {
+  list-style: disc;
+}
+
+.footer-right li {
+  padding: 5px 0;
+}
+
+.worry {
+  margin-top: 20px;
+}
+
+.consult {
+  color: rgb(113, 186, 42);
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.footer-btn {
+  display: flex;
+  margin-top: 30px;
+}
+
+.footer-contact,
+.footer-document {
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-contact {
+  background-color: rgb(113, 186, 42);
+  font-size: 20px;
+  width: 200px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer-document {
+  background-color: rgb(33, 164, 87);
+  font-size: 20px;
+  width: 200px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.telephone {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(113, 186, 42);
+  background-color: white;
+  border: solid 2px rgb(113, 186, 42);
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.under-menu {
+  visibility: hidden;
+}
+
+.privacy-policy {
+  background-color: rgb(244, 244, 244);
+  margin-bottom: 200px;
+}
+
+@media (max-width: 768px) {
+  .header-links {
+    display: none;
+  }
+
+  .logo {
+    width: 200px;
+    margin: 30px 0;
+  }
+
+  .firstview {
+    height: 150px;
+  }
+
+  .firstview-inner {
+    padding-top: 10px;
+  }
+
+  .firstview-inner h1 {
+    font-size: 22px;
+  }
+
+  .firstview-inner p {
+    font-size: 10px;
+  }
+
+  .occhan {
+    width: 80px;
+    bottom: 10px;
+  }
+
+  .seminar-about,
+  .seminar-date {
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .seminar-about:after,
+  .seminar-date:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: solid transparent 10px;
+    border-right: solid transparent 5px;
+    border-bottom: solid transparent 5px;
+    border-left: solid transparent 5px;
+    box-sizing: border-box;
+    border-top-color: white;
+    margin: 15px 0 0 0;
+  }
+
+  .content-title {
+    font-size: 23px;
+  }
+
+  .seminar-content {
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-title:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: rgb(113, 186, 42) transparent transparent transparent;
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+  }
+
+  .phone-icon {
+    display: flex;
+    background-color: greenyellow;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .under-menu {
+    background-color: white;
+    visibility: visible;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .under-menu img {
+    width: 100%;
+  }
+
+  .phone-icon img {
+    width: 50%;
+  }
+
+  .under-menu ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .content-why,
+  .content-logic,
+  .content-how {
+    width: 80vw;
+  }
+
+  .recommend {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .recommend-left p {
+    font-size: 20px;
+  }
+
+  .recommend-left img {
+    width: 80px;
+  }
+
+  .recommend-right {
+    height: 200px;
+  }
+
+  .recommend-right p {
+    font-size: 14px;
+  }
+
+  .impression {
+    justify-content: left;
+    width: 250px;
+  }
+
+  .impression h2 {
+    font-size: 20px;
+  }
+
+  .impression img {
+    width: 50px;
+  }
+
+  .survey {
+    font-size: 17px;
+    width: 90vw;
+    border-bottom: solid 5px rgb(33, 164, 87);
+  }
+
+  .voice-all {
+    flex-direction: column;
+  }
+
+  .voice-right p {
+    font-size: 20px;
+  }
+
+  .arrow-box p {
+    font-size: 14px;
+    padding: 10px 0;
+    line-height: 1.5;
+  }
+
+  .schedule-title h3 {
+    font-size: 30px;
+  }
+
+  .schedule-title p {
+    font-size: 12px;
+  }
+
+  .warning {
+    font-size: 14px;
+  }
+
+  .schedule {
+    width: 90vw;
+  }
+
+  .schedule-date1 {
+    font-size: 23px;
+  }
+
+  .schedule-date2 {
+    font-size: 14px;
+  }
+
+  .schedule-image img {
+    width: 150px;
+    padding: 15px 30px;
+    float: right;
+  }
+
+  .schedule-subtitle h4 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .schedule-subtitle p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .membership-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .membership-title h3 {
+    font-size: 20px;
+  }
+
+  .membership-title img {
+    width: 50px;
+  }
+
+  .membership-right {
+    float: none;
+  }
+
+  .membership-right img {
+    width: 300px;
+  }
+
+  .membership {
+    width: 90vw;
+    align-items: center;
+  }
+
+  .membership-main p {
+    font-size: 14px;
+  }
+
+  .interview {
+    font-size: 14px;
+    padding: 5px 50px;
+  }
+
+  .interview:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent white;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+  }
+
+  .document-title-main p {
+    font-size: 12px;
+  }
+
+  .document-title-main h3 {
+    font-size: 20px;
+  }
+
+  .document-body p {
+    font-size: 14px;
+  }
+
+  .document-icon img {
+    width: 50px;
+  }
+
+  .document-left img {
+    width: 250px;
+  }
+
+  .document-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    margin-bottom: 20px;
+    width: 70vw;
+  }
+
+  .footer-document {
+    width: 70vw;
+  }
+}
